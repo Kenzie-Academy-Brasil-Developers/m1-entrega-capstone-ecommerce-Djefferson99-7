@@ -41,6 +41,7 @@ function criarTemplte(data){
     tagValor.classList.add("valor")
     tagAdd.classList.add("addCarrinho")
 
+
     tagImg.src = image
     tagImg.alt = descricao
     tagH2.innerText = categoria

@@ -2,7 +2,7 @@
 
 const data = [
     {
-       id:0,
+       id:"Tenis",
        categoria: "Tênis",
        nome: "Air Jordan 1",
        descricao:"Jordan 1 remixou nas cores do time do Chicago Bulls, sendo o tenis mais vendido do Jordan.",
@@ -53,6 +53,7 @@ const data = [
         image:"./img/bolaw.webp"
     },
     {
+        id:"Bola",
         categoria: "Bola",
         nome: "Wilson - 75 anos",
         descricao:"Bola de comemoração de aniversário da nba de 75 anos de existencia da liga.",
@@ -65,6 +66,6 @@ const data = [
         descricao:"Bola padrão do basquete de rua, 3v3, feita de borracha para quadras de cimento.",
         preco:175.50,  
         image:"./img/3v3.webp"
-    }
+    },
 ];
 let listaCarrinho = []
