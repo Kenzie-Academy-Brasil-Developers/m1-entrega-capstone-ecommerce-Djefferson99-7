@@ -110,13 +110,15 @@ function criarTemplteCar(data, i){
     tagNome.classList.add("titleCarrinho")
     tagPreco.classList.add("valorCarrinho")
     tagRemov.classList.add("remover")
-    tagRemov.id = i 
+    
+    console.log(i)
 
     tagImg.src = imagem
     tagImg.alt = type
     tagNome.innerText = title
     tagPreco.innerHTML = `R$ ${preci}`
-    tagRemov.innerHTML = `<a class="remover" href="">Remover do carrinho</a>`
+    tagRemov.innerHTML = `<a id = ${i} class="remover" href="">Remover do carrinho</a>`
+    tagRemov.id = i 
 
     tagInfo.append(tagNome, tagPreco, tagRemov)
     tagLi.append(tagImg, tagInfo)
@@ -129,7 +131,8 @@ function criarTemplteCar(data, i){
     removerCarrinho.addEventListener("click", function(event){
         event.preventDefault()
     if(event.target.tagName == "A"){
-        console.log(data)
+        console.log(event.target.id)
+        console.log(listaCarrinho)
         listaCarrinho.splice(event.target.id,1)
         carrinho(listaCarrinho)
         final(listaCarrinho.length)

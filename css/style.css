@@ -108,6 +108,7 @@ ul{
     font-size: 16px regular;
     margin-left: 8px;
     font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
 }
 .addCarrinho:hover{
     color: #37268C;

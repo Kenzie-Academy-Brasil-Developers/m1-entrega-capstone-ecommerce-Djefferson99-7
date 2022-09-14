@@ -2,6 +2,7 @@
 
 const data = [
     {
+       id:0,
        categoria: "Tênis",
        nome: "Air Jordan 1",
        descricao:"Jordan 1 remixou nas cores do time do Chicago Bulls, sendo o tenis mais vendido do Jordan.",
@@ -9,6 +10,7 @@ const data = [
        image:"./img/tenisJordan1.jpg"
     },
     {
+        id: 1,
         categoria: "Tênis",
         nome: "Kyrie 4 Halloween",
         descricao:"Uma edição especial de comemoração do Halloween, nas cores preto e verde neon.",
