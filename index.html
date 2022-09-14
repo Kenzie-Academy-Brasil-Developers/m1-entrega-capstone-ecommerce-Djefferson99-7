@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>BaskaShop</title>
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+            <h1>
+                BaskaShop
+            </h1>
+            <nav>
+                <ul>
+                    <li class="nav"><a class="navTopico" href=""><strong>Todos</strong></a></li>
+                    <li class="nav"><a class="navTopico" href="">Tênis</a></li>
+                    <li class="nav"><a class="navTopico" href="">Jersey</a></li>
+                    <li class="nav"><a class="navTopico" href="">Bola</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="topico">
+            <ul class="produtoTopico">
+            </ul>
+        </div>
+        <div class="carrinho">
+            <div class="barraPesquisa">
+                <form>
+                    <label for="User"></label>
+                    <input type="text" id="User" name="pesquisa" placeholder="Digite aqui sua pesquisa" required>
+                    <button class="pesquisa" type="submit">Pesquisar</button>
+                </form>
+            </div>
+            <h4>Carrinho de Compras</h4>
+                <div>
+                    <ul class="conteinerCarrinho">
+                        <div>
+                            <p class="carrinhoVazio"> <strong>Carrinho Vázio</strong>Adicione Itens</p>
+                        </div>
+                    </ul>
+                </div>
+                <div class=" resutado" >
+                    <div class="quantidade">Quantidade: <span class="valorQuatidade"></span></div>
+                    <div class="total">Total: <span class=" precoTotal"></span></div>
+                </div>
+        </div>
+    </main>
+    <script src="./js/database.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

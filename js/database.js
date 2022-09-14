@@ -1,64 +1,68 @@
 // Banco de dados dos produtos
 
 const data = [
-  {
-    id: 1,
-    img: "../img/jaqueta.svg",
-    nameItem: "Lightweight Jacket",
-    description:
-      "Adicione um pouco de energia ao seu guarda-roupa de inverno com esta jaqueta vibrante...",
-    value: 100,
-    addCart: "Adicionar ao carrinho",
-    tag: ["Camisetas"],
-  },
-  {
-    id: 2,
-    img: "../img/gorro.svg",
-    nameItem: "Black Hat",
-    description:
-      "O gorro Next.js chegou! Esta beldade bordada tem um ajuste confortável que garante que...",
-    value: 100,
-    addCart: "Adicionar ao carrinho",
-    tag: ["Acessórios"],
-  },
-  {
-    id: 3,
-    img: "../img/mascara.svg",
-    nameItem: "Mask",
-    description:
-      "Esta máscara facial durável é feita de duas camadas de tecido tratado e possui presilhas...",
-    value: 40,
-    addCart: "Adicionar ao carrinho",
-    tag: ["Acessórios"],
-  },
-  {
-    id: 4,
-    img: "../img/camiseta_preta.svg",
-    nameItem: "T-Shirt",
-    description:
-      "Esta t-shirt é imprescindível no seu guarda-roupa, combinando o caimento intemporal de...",
-    value: 100,
-    addCart: "Adicionar ao carrinho",
-    tag: ["Camisetas"],
-  },
-  {
-    id: 5,
-    img: "../img/camiseta_branca.svg",
-    nameItem: "Short-Sleeve T-Shirt",
-    description:
-      "Agora você encontrou a camiseta básica do seu guarda-roupa. É feito de um mais grosso...",
-    value: 100,
-    addCart: "Adicionar ao carrinho",
-    tag: ["Camisetas"],
-  },
-  {
-    id: 6,
-    img: "../img/moletom.svg",
-    nameItem: "Champion Packable Jacket",
-    description:
-      "Proteja-se dos elementos com esta jaqueta embalável Champion. Esta jaqueta de poliést...",
-    value: 100,
-    addCart: "Adicionar ao carrinho",
-    tag: ["Camisetas"],
-  },
+    {
+       categoria: "Tênis",
+       nome: "Air Jordan 1",
+       descricao:"Jordan 1 remixou nas cores do time do Chicago Bulls, sendo o tenis mais vendido do Jordan.",
+       preco:700.00, 
+       image:"./img/tenisJordan1.jpg"
+    },
+    {
+        categoria: "Tênis",
+        nome: "Kyrie 4 Halloween",
+        descricao:"Uma edição especial de comemoração do Halloween, nas cores preto e verde neon.",
+        preco:650.00,  
+        image:"./img/Tenis-Nike-Kyrie-4.webp"   
+    },
+    {
+        categoria: "Tênis",
+        nome: "LeBron 19 Space Jam",
+        descricao:"Tênis utilizado pelo Lebron, no filme Space Jam: Um novo legado.",
+        preco:1000.00,  
+        image:"./img/spacejam2.webp"
+    },
+    {
+        categoria: "Jersey",
+        nome: "Lakers - Kobe",
+        descricao:"Regata amarela e roxa, número 24, do Los Angeles Lakers, Kobe Brayant.",
+        preco:399.50,  
+        image:"./img/kobe.png"
+    },
+    {
+        categoria: "Jersey",
+        nome: "Cavs - Lebron",
+        descricao:"Regata do Clevelend na cor vinho, número 23 do Lebron James.",
+        preco:450.00,  
+        image:"./img/james.jpg"
+    },
+    {
+        categoria: "Jersey",
+        nome: "Hornets - Lamelo",
+        descricao:"Regata azul e verde, número 2 do  Charlotte Hornets, Lamelo Ball.",
+        preco:300.00,  
+        image:"./img/lamelo.jpg"
+    },
+    {
+        categoria: "Bola",
+        nome: "Wilson - NBA",
+        descricao:"Bola padrão ultilizada nos jogos da nba, feita de couro para quadras taqueadas.",
+        preco:180.00,  
+        image:"./img/bolaw.webp"
+    },
+    {
+        categoria: "Bola",
+        nome: "Wilson - 75 anos",
+        descricao:"Bola de comemoração de aniversário da nba de 75 anos de existencia da liga.",
+        preco:265.00,  
+        image:"./img/75anos.jpeg"
+    },
+    {
+        categoria: "Bola",
+        nome: "Wilson - 3v3",
+        descricao:"Bola padrão do basquete de rua, 3v3, feita de borracha para quadras de cimento.",
+        preco:175.50,  
+        image:"./img/3v3.webp"
+    }
 ];
+let listaCarrinho = []
